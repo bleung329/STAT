@@ -22,7 +22,7 @@ int main(){
 	for(i = 0; i < 9; i++)
 		if(!(mode & (1 << (8-i))))
 			modes[i] = '-';
-	printf("Permissions: %s\n", modes);
+	printf("Permissions, ls -l style: %s\n", modes);
 
 	printf("Access time: %s\n", ctime((time_t *)&sb.st_atim));
 
